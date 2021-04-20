@@ -18,5 +18,5 @@ COPY . .
 # compila a aplicação de produção com minificação
 RUN yarn build
 
-EXPOSE 8080:80
+EXPOSE 8080
 CMD [ "http-server", "./dist/spa" ]
